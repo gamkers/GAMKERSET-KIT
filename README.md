@@ -1,7 +1,5 @@
 <h1 align="center">
-  <br>
-  <a href="https://github.com/ultrasecurity/Storm-Breaker"><img src=".imgs/1demo.png" alt="StormBreaker"></a>
-
+  GAMKERS SET KIT
 </h1>
 
 <h4 align="center">A Tool With Attractive Capabilities. </h4>
