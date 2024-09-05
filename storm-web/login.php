@@ -30,7 +30,7 @@ else{
   <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
     <div class="wrapper">
       <div class="title">
-        <h1>GAMERS SET TOOL KIT</h1>
+        <h1>GAMKERS SET TOOL KIT</h1>
       </div>
       <form action="" class="form-signin" method="POST">       
         <h2 class="form-signin-heading">Please login</h2>
