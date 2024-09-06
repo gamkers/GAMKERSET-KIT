@@ -102,11 +102,12 @@ else {
             align-items: center;
             width: 200px;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #00ff00; /* Green border for glow theme */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: rgba(255, 255, 255, 0.2); /* Glassy look */
             backdrop-filter: blur(6px);
+            animation: glow 2s ease-in-out infinite; /* Apply glow animation */
         }
 
         .template-image img {
