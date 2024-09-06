@@ -259,6 +259,7 @@ else {
 <body id="ourbody" onload="check_new_version()">
 <div class="glass-container">
     <h2>GAMKERS SET TOOL KIT</h2>
+    <p>GAMKERSET-KIT is an educational tool for ethical hacking and security research. Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal. The creators are not liable for misuse.<p>
     <div id="links"></div>
 
     <div class="mt-2 d-flex justify-content-center">
