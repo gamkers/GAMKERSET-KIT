@@ -91,7 +91,7 @@ else {
             backdrop-filter: blur(10px); /* Blur effect */
             box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft shadow */
             border: 1px solid rgba(255, 255, 255, 0.18); /* Border with transparency */
-            width: 80%;
+            width: 90%;
             max-width: 800px;
             margin-top: 500px;
         }
@@ -246,7 +246,7 @@ else {
                 margin-top: 2rem !important;
             }
             .glass-container {
-                margin-top: 750px;
+                margin-top: 800px;
             }
             h2{
             font-size: 20px;
