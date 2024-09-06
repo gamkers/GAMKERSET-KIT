@@ -236,7 +236,7 @@ else {
         }
 
         .glow-blink {
-            font-size: 20px;
+            font-size: 14px;
             text-align: center;
             color: #00ff00;
             animation: glow 2s ease-in-out infinite, blink 1.5s infinite;
@@ -284,8 +284,8 @@ else {
 <div class="glass-container">
     <h2>GAMKERS SET TOOL KIT</h2>
     <div class="glow-blink">
-    <p>GAMKERSET-KIT is an educational tool for ethical hacking and security research.</p>
-    <p>Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal.</p>
+    <p>GAMKERSET-KIT is an educational tool for ethical hacking and security research.
+    Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal.
     <p>The creators are not liable for misuse.</p>
     </div>
     <div id="links"></div>
