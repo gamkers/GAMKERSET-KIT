@@ -235,26 +235,28 @@ else {
             margin: 10px; /* Space around buttons */
         }
 
-        .typing-effect {
-          font-size: 8px;
-          border-right: 2px solid #00ff00;
-          white-space: normal; /* Allow text wrapping */
-          overflow: hidden;
-          display: inline-block;
+         .glow-blink {
+            font-size: 20px;
+            text-align: center;
+            color: #00ff00;
+            animation: glow 1.5s ease-in-out infinite alternate, blink 1s infinite;
         }
-        
-        @keyframes typing {
-          from { width: 0; }
-          to { width: 100%; }
+
+        /* Glowing effect */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+            }
         }
-        
+
+        /* Blinking effect */
         @keyframes blink {
-          50% { border-color: transparent; }
-        }
-        
-        .typing-effect {
-          animation: typing 10s steps(100, end), blink 0.75s step-end infinite;
-          width: 100%; /* Ensure the text fills the container */
+            50% {
+                opacity: 0;
+            }
         }
 
         @media (max-width: 768px) {
@@ -281,7 +283,11 @@ else {
 <body id="ourbody" onload="check_new_version()">
 <div class="glass-container">
     <h2>GAMKERS SET TOOL KIT</h2>
-    <p class="typing-effect">GAMKERSET-KIT is an educational tool for ethical hacking and security research. Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal. The creators are not liable for misuse.</p>
+    <div class="glow-blink">
+    <p>GAMKERSET-KIT is an educational tool for ethical hacking and security research.</p>
+    <p>Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal.</p>
+    <p>The creators are not liable for misuse.</p>
+    </div>
     <div id="links"></div>
 
     <div class="mt-2 d-flex justify-content-center">
