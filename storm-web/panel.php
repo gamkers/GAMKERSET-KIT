@@ -252,7 +252,6 @@ else {
         }
         
         .typing-effect {
-          display: inline-block;
           width: 100%;
           animation: typing 5s steps(50, end), blink 0.75s step-end infinite;
         }
