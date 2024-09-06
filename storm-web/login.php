@@ -101,7 +101,7 @@ else{
     }
 
     .btn:hover {
-        background-color: #fff;
+        background-color: green;
     }
 
     .container-fluid {
