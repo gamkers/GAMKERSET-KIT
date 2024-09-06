@@ -237,9 +237,10 @@ else {
 
         .typing-effect {
           font-size: 20px;
-          border-right: 2px solid black;
-          white-space: nowrap;
+          border-right: 2px solid #00ff00;
+          white-space: normal; /* Allow text wrapping */
           overflow: hidden;
+          display: inline-block;
         }
         
         @keyframes typing {
@@ -252,8 +253,8 @@ else {
         }
         
         .typing-effect {
-          width: 100%;
-          animation: typing 5s steps(50, end), blink 0.75s step-end infinite;
+          animation: typing 10s steps(100, end), blink 0.75s step-end infinite;
+          width: 100%; /* Ensure the text fills the container */
         }
 
         @media (max-width: 768px) {
