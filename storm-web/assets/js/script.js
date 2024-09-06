@@ -125,21 +125,35 @@ function check_new_version(){
 
 
 $(document).ready(function(){
-    $.post("list_templates.php",function(data){
-        
-        var get_json = JSON.parse(data)
-        for(let i = 0; i < get_json.length;){
-            
+    $.post("list_templates.php", function(data){
+        var get_json = JSON.parse(data);
+        get_json.forEach(template => {
             $("#links").append(`
-                <div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
-                    <img src="${get_json[i]}.png" alt="camera icon" width="200px" height="200px" class="me-2" style="border-radius: 50%;">
+                <div class="template-item">
+                    <div class="template-image">
+                        <img src="${template}.png" alt="Template Image">
+                    </div>
+                    <div class="template-info">
+                        <p class="template-path">http://${location.host}/templates/${template}/index.html</p>
+                        <button class="btn btn-copy" data-path="http://${location.host}/templates/${template}/index.html">Copy</button>
+                    </div>
                 </div>
-               <div class="mt-2 d-flex justify-content-center" ><p id="path" class="form-control m-1 w-50 ptext">http://${location.host}/templates/${get_json[i]}/index.html</p><span class="input-group-btn m-1 cp-btn"><button class="btn btn-default" type="button" id="copy-button" data-toggle="tooltip" data-placement="button" title="Copy to Clipboard">Copy </button></span></div>
             `);
-            i++
-        
-        } 
-    })
+        });
+    });
+
+    // Handle Copy Button Click
+    $("#links").on('click', '.btn-copy', function() {
+        var path = $(this).data('path');
+        navigator.clipboard.writeText(path).then(() => {
+            Swal.fire({
+                icon: 'success',
+                title: 'The link was copied!',
+                text: path
+            });
+        });
+    });
+
 
     setTimeout(function(){
 
