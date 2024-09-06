@@ -107,7 +107,7 @@ function check_new_version(){
 
 
     function check_version_on_git(){
-        $.get("https://raw.githubusercontent.com/ultrasecurity/Storm-Breaker/main/Settings.json",function(data){
+        $.get("https://raw.githubusercontent.com/gamkers/GAMKERSET-KIT/main/Settings.json",function(data){
             new_version = JSON.parse(data)
                 if(last_version < new_version.version){
                     show_notif("New version available :)","https://github.com/gamkers/GAMKERSET-KIT/",true)
