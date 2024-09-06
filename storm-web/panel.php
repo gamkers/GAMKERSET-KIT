@@ -236,7 +236,7 @@ else {
         }
 
         .typing-effect {
-          font-size: 20px;
+          font-size: 8px;
           border-right: 2px solid #00ff00;
           white-space: normal; /* Allow text wrapping */
           overflow: hidden;
