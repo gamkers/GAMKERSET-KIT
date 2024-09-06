@@ -235,27 +235,27 @@ else {
             margin: 10px; /* Space around buttons */
         }
 
-         .glow-blink {
+        .glow-blink {
             font-size: 20px;
             text-align: center;
             color: #00ff00;
-            animation: glow 1.5s ease-in-out infinite alternate, blink 1s infinite;
+            animation: glow 2s ease-in-out infinite, blink 1.5s infinite;
         }
 
-        /* Glowing effect */
+        /* Glowing effect (reduced shadow intensity for better performance) */
         @keyframes glow {
             0% {
-                text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+                text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
             }
             100% {
-                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+                text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00;
             }
         }
 
-        /* Blinking effect */
+        /* Blinking effect (slower to reduce flickering and load) */
         @keyframes blink {
             50% {
-                opacity: 0;
+                opacity: 0.5;
             }
         }
 
