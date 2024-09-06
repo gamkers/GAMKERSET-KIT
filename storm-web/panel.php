@@ -235,6 +235,28 @@ else {
             margin: 10px; /* Space around buttons */
         }
 
+        .typing-effect {
+          font-size: 20px;
+          border-right: 2px solid black;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        
+        @keyframes typing {
+          from { width: 0; }
+          to { width: 100%; }
+        }
+        
+        @keyframes blink {
+          50% { border-color: transparent; }
+        }
+        
+        .typing-effect {
+          display: inline-block;
+          width: 100%;
+          animation: typing 5s steps(50, end), blink 0.75s step-end infinite;
+        }
+
         @media (max-width: 768px) {
             body{
                 height: 155vh;
@@ -259,7 +281,7 @@ else {
 <body id="ourbody" onload="check_new_version()">
 <div class="glass-container">
     <h2>GAMKERS SET TOOL KIT</h2>
-    <p>GAMKERSET-KIT is an educational tool for ethical hacking and security research. Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal. The creators are not liable for misuse.<p>
+    <p class="typing-effect">GAMKERSET-KIT is an educational tool for ethical hacking and security research. Unauthorized use, including accessing webcams, microphones, or location data without consent, is illegal. The creators are not liable for misuse.</p>
     <div id="links"></div>
 
     <div class="mt-2 d-flex justify-content-center">
