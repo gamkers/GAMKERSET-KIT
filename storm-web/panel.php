@@ -246,7 +246,7 @@ else {
                 margin-top: 2rem !important;
             }
             .glass-container {
-                margin-top: 700px;
+                margin-top: 750px;
             }
             h2{
             font-size: 20px;
