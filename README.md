@@ -44,7 +44,7 @@
 - You can start and stop the listener anytime ! (At will)
 - Beautified user interface (NEW) !
 
-> We have deleted Ngrok in the new version of Storm breaker and entrusted the user with running and sharing the localhost . So please note that Storm breaker runs a localhost for you and you have to start the Ngrok on your intended port yourself .
+> We have deleted Ngrok in the new version of GAMKERSET and entrusted the user with running and sharing the localhost . So please note that GAMKERSET runs a localhost for you and you have to start the Ngrok on your intended port yourself .
 > <br>
 
 #### Attention! :
@@ -61,7 +61,7 @@
 
 ### Dependencies
 
-**`Storm Breaker`** requires following programs to run properly -
+**`GAMKERSET`** requires following programs to run properly -
 
 - `php`
 - `python3`
@@ -82,6 +82,7 @@
 ### Installation On Kali Linux
 
 ```bash
+pkg update -y
 pkg install git
 pkg install python
 git clone https://github.com/gamkers/GAMKERSET-KIT.git
