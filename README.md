@@ -20,7 +20,7 @@
 
 </p>
 
-![demo](.imgs/screen1.jpeg)
+![demo](screen1.png)
 
 ### Features:
 
