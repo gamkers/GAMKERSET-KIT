@@ -82,6 +82,8 @@
 ### Installation On Kali Linux
 
 ```bash
+pkg install git
+pkg install python
 git clone https://github.com/gamkers/GAMKERSET-KIT.git
 cd GAMKERSET-KIT
 bash install.sh
