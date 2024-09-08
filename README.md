@@ -83,6 +83,7 @@
 
 ```bash
 pkg update -y
+pkg install wget
 pkg install git
 pkg install python
 git clone https://github.com/gamkers/GAMKERSET-KIT.git
