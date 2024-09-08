@@ -82,10 +82,14 @@
 ### Installation On Kali Linux
 
 ```bash
+
 pkg update -y
+pkg upgrade 
 pkg install wget
 pkg install git
 pkg install python
+pkg install openssl
+
 git clone https://github.com/gamkers/GAMKERSET-KIT.git
 cd GAMKERSET-KIT
 bash install.sh
