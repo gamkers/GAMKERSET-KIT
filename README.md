@@ -84,9 +84,9 @@
 ```bash
 git clone https://github.com/gamkers/GAMKERSET-KIT.git
 cd GAMKERSET-KIT
-sudo bash install.sh
-sudo python3 -m pip install -r requirements.txt
-sudo python3 st.py
+bash install.sh
+python3 -m pip install -r requirements.txt
+python3 st.py
 ```
 
 <br>
