@@ -15,7 +15,7 @@ RST='\033[0m'
 checkroot() {
     SAVE_LD_PRELOAD="$LD_PRELOAD"
     unset LD_PRELOAD
-    if [ "$(id -u)" -ne 0 ]; then
+    if True; then
         printf "${RED}Please, run as root!\n${RST}"
         exit 1
     fi
